@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/../../database/connect.php'; // se precisar conectar ao DB
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
