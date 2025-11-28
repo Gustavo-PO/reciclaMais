@@ -2,13 +2,13 @@
     --texto-branco: #fafafa;
     --texto: #171717;
     --texto-secun: #666;
-    --background: #D7ECD7;
+    --background: #ECFDF5;
     --azul-claro: #B0E2FF;
     --azul: #3A5FCD;
     --verde-claro: #D7ECD7;
     --preto: #1C1C1C;
     --vermelho: #FF383C;
-    --verde: #90BE90;
+    --verde: #009689;
 }
 
 * {
@@ -55,5 +55,32 @@ header nav {
 }
 
 .nav-links li a:hover {
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.text-center {
+    background-image: url('https://images.unsplash.com/photo-1763976328106-2711fd81f686?w=1920');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 500px; /* ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center img {
+    display: none; /* esconde a tag img */
+}
+
+.text-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    position: relative;
 }

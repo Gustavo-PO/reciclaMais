@@ -1,6 +1,4 @@
-<?php
-require_once __DIR__ . '/../../database/connect.php';
-?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -9,6 +7,7 @@ require_once __DIR__ . '/../../database/connect.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="" href="../../assets/css/home.css">
+    <script src="https://kit.fontawesome.com/71e3785a50.js" crossorigin="anonymous"></script>
     <title>ReciclaMais - Home</title>
 </head>
 
@@ -16,23 +15,29 @@ require_once __DIR__ . '/../../database/connect.php';
     <header>
         <nav>
             <div class="logo">
-                <a href="home.php">ReciclaMais</a>
+                <a href="home.html">
+                    <i class="fa-solid fa-recycle"></i>
+                    ReciclaMais
+                </a>
             </div>
             <ul class="nav-links">
-                <li><a href="home.php">Início</a></li>
-                <li><a href="about.php">Sobre Nós</a></li>
-                <li><a href="contact.php">Contato</a></li>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="home.html">Como funciona</a></li>
+                <li><a href="home.html">Aprenda</a></li>
+                <li><a href="home.html">Recompensas</a></li>
+                <li><a href="home.html">Sobre Nós</a></li>
+                <li><a href="home.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="text-center">
+        <section class="text-center">   
             <div class="text-content">
                 <h2>Bem-vindo ao ReciclaMais</h2>
                 <p>Junte-se a nós na missão de tornar o mundo um lugar mais sustentável!</p>
-                <a href="about.php" class="btn">Saiba Mais</a>
             </div>
         </section>
+        
     </main>
 
 </body>
