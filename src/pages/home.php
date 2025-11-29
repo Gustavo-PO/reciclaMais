@@ -15,7 +15,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="home.html">
+                <a href="home.php">
                     <i class="fa-solid fa-recycle"></i>
                     ReciclaMais
                 </a>
@@ -24,9 +24,7 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#comofunciona">Como funciona</a></li>
                 <li><a href="#aprenda">Aprenda</a></li>
-                <li><a href="home.html">Recompensas</a></li>
                 <li><a href="home.html">Sobre Nós</a></li>
-                <li><a href="home.html">Contato</a></li>
                 <li><a href="login.php"><i class="fa-solid fa-circle-user"></i>Login</a></li>
             </ul>
         </nav>

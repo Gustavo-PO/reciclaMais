@@ -1,0 +1,184 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: var(--background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: var(--verde-claro);
+    border-radius: 12px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px 20px 10px 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--cinza-escuro);
+}
+
+.header p {
+    font-size: 16px;
+    color: var(--cinza);
+}
+
+/* Cartão onde fica o formulário */
+.card, .cardCriar {
+    background: var(--branco);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    padding: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.card.ativo,
+.cardCriar.ativo {
+    display: block;
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cinza-escuro);
+}
+
+/* Grupos de formulário */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--cinza-escuro);
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--cinza);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+    background: var(--cinza-claro);
+}
+
+.form-group input:focus {
+    border-color: var(--verde-principal);
+    background: var(--branco);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.2);
+}
+
+/* Botão principal */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: var(--verde-principal);
+    color: var(--branco);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: var(--verde-escuro);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Link "esqueci a senha" */
+.forgot-password {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: var(--verde-principal);
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Links para trocar entre páginas */
+.link-cadastro,
+.link-login {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.link-cadastro a,
+.link-login a {
+    color: var(--verde-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-cadastro a:hover,
+.link-login a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+}
