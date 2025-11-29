@@ -68,14 +68,14 @@ header nav {
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 500px; /* ajuste conforme necessário */
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .text-center img {
-    display: none; /* esconde a tag img */
+    display: none; 
 }
 
 .text-content {
@@ -83,4 +83,103 @@ header nav {
     color: white;
     z-index: 1;
     position: relative;
+}
+
+.feature-wrapper {
+    padding: 30px 20px;
+}
+
+.feature-box {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    background: #effdf6;     
+    border: 1px solid #dff3ea;         
+    border-radius: 12px;
+    padding: 26px;
+    box-shadow: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-icon {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #07b37b 0%, #049e5e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    box-shadow: 0 8px 18px rgba(3,86,53,0.08);
+}
+
+.feature-content h4 {
+    margin: 0 0 8px 0;
+    color: #0b6b45;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature-content p {
+    margin: 0;
+    color: #435058;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 880px;
+}
+
+@media (max-width: 760px) {
+    .feature-box {
+        flex-direction: column;
+        text-align: left;
+        gap: 12px;
+        padding: 18px;
+    }
+    .feature-icon {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        font-size: 22px;
+    }
+}
+
+
+.feature-box {
+    transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+    will-change: transform, box-shadow;
+}
+.feature-box:hover,
+.feature-box:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px rgba(3,86,53,0.12);
+    background: #f6fff9;
+    cursor: pointer;
+}
+
+.feature-icon {
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.feature-box:hover .feature-icon,
+.feature-box:focus-within .feature-icon {
+    transform: translateY(-4px) scale(1.04) rotate(-2deg);
+    box-shadow: 0 12px 24px rgba(3,86,53,0.10);
+}
+
+.feature-box:focus-within {
+    outline: 3px solid rgba(7,179,123,0.12);
+    outline-offset: 6px;
+}
+
+.card {
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    will-change: transform, box-shadow;
+}
+.card:hover,
+.card:focus-within {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(3,86,53,0.08);
+    cursor: pointer;
 }
