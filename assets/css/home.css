@@ -9,6 +9,7 @@
     --preto: #1C1C1C;
     --vermelho: #FF383C;
     --verde: #009689;
+    --verde-escuro: #025a42;
 }
 
 * {
@@ -19,6 +20,7 @@
 
 body {
     background-color: var(--background);
+    padding-top: 64px;
 }
 
 header {
@@ -28,7 +30,7 @@ header {
     width: 100%;
     z-index: 1000;
     background-color: var(--verde);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 header nav {
@@ -41,11 +43,6 @@ header nav {
     gap: 20px;
     height: 64px;
     padding: 0 20px;
-}
-
-body {
-    background-color: var(--background);
-    padding-top: 64px;
 }
 
 .logo a {
@@ -70,7 +67,7 @@ body {
 }
 
 .nav-links li a.active {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     color: #fff;
 }
 
@@ -95,7 +92,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 500px;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,10 +121,10 @@ body {
     color: #fff;
     z-index: 1;
     position: relative;
-    background: rgba(255,255,255,0.04);
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .text-content h1,
@@ -141,7 +138,7 @@ body {
 
 .text-content p {
     font-size: 18px;
-    color: rgba(255,255,255,0.95);
+    color: rgba(255, 255, 255, 0.95);
     line-height: 1.6;
     margin-top: 8px;
 }
@@ -152,10 +149,12 @@ body {
         margin: 0 16px;
         margin-top: 0;
     }
+
     .text-content h1,
     .text-content h2 {
         font-size: 28px;
     }
+
     .text-content p {
         font-size: 16px;
     }
@@ -163,27 +162,39 @@ body {
 
 @media (max-width: 900px) {
     header nav {
-        height: auto;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 6px;
-        padding: 10px 16px;
+        height: 64px;
+        gap: 0;
+        padding: 0 16px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
+
     .logo {
         padding: 4px 0;
+        flex-shrink: 0;
     }
+
     .nav-links {
-        width: 100%;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         gap: 8px;
-        padding: 8px 0 0 0;
-        border-top: 1px solid rgba(255,255,255,0.04);
+        padding: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        align-items: center;
+        scrollbar-color: rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.1);
+        scrollbar-width: thin;
     }
+
     .nav-links li a {
-        display: block;
+        display: inline-block;
         padding: 10px 12px;
-        width: 100%;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
+
     .inicio {
         min-height: 420px;
         padding-top: 24px;
@@ -192,14 +203,18 @@ body {
 
 @media (max-width: 420px) {
     header nav {
-        padding: 8px 12px;
+        padding: 0 12px;
     }
+
     .logo a {
         font-size: 20px;
     }
-    .text-content h1, .text-content h2 {
+
+    .text-content h1,
+    .text-content h2 {
         font-size: 22px;
     }
+
     .text-content p {
         font-size: 15px;
     }

@@ -3,10 +3,11 @@
     text-align: center;
     max-width: 1200px;
     margin: auto;
+    min-height: auto;
 }
 
 .reciclagem h2 {
-    color: #0d936b;
+    color: var(--verde);
     font-size: 22px;
     margin-bottom: 5px;
 }
@@ -15,7 +16,7 @@
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 50px;
-    color: #374151;
+    color: var(--verde-escuro);
 }
 
 
@@ -23,8 +24,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+    width: 100%;
 }
-
 
 .cards {
     padding: 10px;
@@ -33,7 +34,7 @@
 .icone {
     width: 90px;
     height: 90px;
-    background: #01a878;
+    background: var(--verde);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,41 +51,138 @@
     margin-top: 15px;
     font-weight: bold;
     color: #0d936b;
+    font-size: 18px;
 }
 
 .cards h3 {
     margin: 10px 0;
     font-size: 20px;
-    color: #1f2937;
+    color: var(--verde-escuro);
 }
 
 .cards p {
     padding: 0 10px;
     font-size: 16px;
     color: #4b5563;
+    line-height: 1.5;
 }
 
 @media (max-width: 900px) {
-    .steps-container {
-        grid-template-columns: repeat(2, 1fr);
+    .reciclagem {
+        padding: 48px 16px;
     }
-}
-
-@media (max-width: 600px) {
+    
     .reciclagem h1 {
-        font-size: 22px;
+        font-size: 24px;
+        margin-bottom: 40px;
     }
 
-    .steps-container {
-        grid-template-columns: 1fr;
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 
-    .icon-box {
+    .cards {
+        padding: 18px;
+    }
+
+    .icone {
         width: 80px;
         height: 80px;
     }
 
-    .icon-box i {
+    .icone i {
         font-size: 32px;
+    }
+
+    .cards h3 {
+        font-size: 18px;
+    }
+
+    .cards p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reciclagem {
+        padding: 40px 12px;
+    }
+
+    .reciclagem h2 {
+        font-size: 18px;
+    }
+
+    .reciclagem h1 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .cards {
+        padding: 16px;
+    }
+
+    .icone {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icone i {
+        font-size: 28px;
+    }
+
+    .cards h3 {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .cards p {
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .cards-number {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .reciclagem {
+        padding: 32px 10px;
+    }
+
+    .reciclagem h2 {
+        font-size: 16px;
+    }
+
+    .reciclagem h1 {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .cards {
+        padding: 14px;
+    }
+
+    .icone {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icone i {
+        font-size: 24px;
+    }
+
+    .cards h3 {
+        font-size: 15px;
+    }
+
+    .cards p {
+        font-size: 12px;
     }
 }
