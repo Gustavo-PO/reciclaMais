@@ -68,14 +68,14 @@ header nav {
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 500px; /* ajuste conforme necessário */
+    min-height: 500px; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .text-center img {
-    display: none; /* esconde a tag img */
+    display: none; 
 }
 
 .text-content {
@@ -83,4 +83,49 @@ header nav {
     color: white;
     z-index: 1;
     position: relative;
+}
+
+.learn-item {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    text-align: center;
+    transition: 0.2s;
+
+}
+
+.learn-item:hover {
+    transform: scale(1.03);
+}
+
+.learn-item img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.learn-item h3 {
+    color: #00795c;
+    margin-bottom: 10px;
+}
+
+.learn-item p {
+    font-size: 15px;
+    color: #003125;
+}
+
+
+.learn-grid {
+    display: grid;
+    gap: 40px;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+@media (min-width: 750px) {
+    .learn-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
