@@ -1,0 +1,188 @@
+.reciclagem {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    min-height: auto;
+}
+
+.reciclagem h2 {
+    color: var(--verde);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.reciclagem h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: var(--verde-escuro);
+}
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+.cards {
+    padding: 10px;
+}
+
+.icone {
+    width: 90px;
+    height: 90px;
+    background: var(--verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.icone i {
+    font-size: 38px;
+    color: white;
+}
+
+.cards-number {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0d936b;
+    font-size: 18px;
+}
+
+.cards h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--verde-escuro);
+}
+
+.cards p {
+    padding: 0 10px;
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .reciclagem {
+        padding: 48px 16px;
+    }
+    
+    .reciclagem h1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .cards {
+        padding: 18px;
+    }
+
+    .icone {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icone i {
+        font-size: 32px;
+    }
+
+    .cards h3 {
+        font-size: 18px;
+    }
+
+    .cards p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reciclagem {
+        padding: 40px 12px;
+    }
+
+    .reciclagem h2 {
+        font-size: 18px;
+    }
+
+    .reciclagem h1 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .cards {
+        padding: 16px;
+    }
+
+    .icone {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icone i {
+        font-size: 28px;
+    }
+
+    .cards h3 {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .cards p {
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .cards-number {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .reciclagem {
+        padding: 32px 10px;
+    }
+
+    .reciclagem h2 {
+        font-size: 16px;
+    }
+
+    .reciclagem h1 {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .cards {
+        padding: 14px;
+    }
+
+    .icone {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icone i {
+        font-size: 24px;
+    }
+
+    .cards h3 {
+        font-size: 15px;
+    }
+
+    .cards p {
+        font-size: 12px;
+    }
+}
