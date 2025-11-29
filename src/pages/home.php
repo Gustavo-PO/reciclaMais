@@ -1,3 +1,7 @@
+<?php
+require_once 'log.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -25,7 +29,18 @@
                 <li><a href="#comofunciona">Como funciona</a></li>
                 <li><a href="#aprenda">Aprenda</a></li>
                 <li><a href="home.html">Sobre Nós</a></li>
+                <?php
+                if (isUserLoggedIn() == true) {
+                ?>
+                <li><a href="recompensas.php">Recompensas</a></li>
+                <li><a href="logout.php"><i class="fa-solid fa-circle-user"></i>LogOut</a></li>
+                <?php
+                }else{
+                ?>
                 <li><a href="login.php"><i class="fa-solid fa-circle-user"></i>Login</a></li>
+                <?php
+                }
+                ?>
             </ul>
         </nav>
     </header>

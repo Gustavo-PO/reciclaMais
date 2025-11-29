@@ -36,7 +36,6 @@ body {
     color: var(--cinza);
 }
 
-/* Cartão onde fica o formulário */
 .card, .cardCriar {
     background: var(--branco);
     border-radius: 10px;
@@ -64,7 +63,12 @@ body {
     color: var(--cinza-escuro);
 }
 
-/* Grupos de formulário */
+.cardCriar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cinza-escuro);
+}
+
 
 .form-group {
     margin-bottom: 20px;
@@ -89,6 +93,10 @@ body {
     color: var(--cinza);
 }
 
+#login-email, #login-password, #criar-nome{
+    width: 85%;
+}
+
 .form-group input {
     width: 100%;
     padding: 15px 15px 15px 45px;
@@ -106,12 +114,11 @@ body {
     box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.2);
 }
 
-/* Botão principal */
 .btn {
     display: block;
     width: 100%;
     padding: 15px;
-    background: var(--verde-principal);
+    background: var(--verde);
     color: var(--branco);
     border: none;
     border-radius: 8px;
