@@ -21,7 +21,6 @@ body {
     background-color: var(--background);
 }
 
-/* header fixo e container da nav */
 header {
     position: fixed;
     top: 0;
@@ -44,7 +43,6 @@ header nav {
     padding: 0 20px;
 }
 
-/* desloca o conteúdo para baixo para não ficar sob o header fixo */
 body {
     background-color: var(--background);
     padding-top: 64px;
@@ -71,10 +69,6 @@ body {
     align-items: center;
 }
 
-.nav-links li a {
-    transition: background .18s ease, color .18s ease;
-}
-
 .nav-links li a.active {
     background: rgba(255,255,255,0.08);
     color: #fff;
@@ -91,12 +85,12 @@ body {
     background: rgba(0, 0, 0, 0.05);
 }
 
-.text-center {
+.inicio {
     text-align: center;
     padding-top: 50px;
 }
 
-.text-center {
+.inicio {
     background-image: url('https://images.unsplash.com/photo-1763976328106-2711fd81f686?w=1920');
     background-size: cover;
     background-position: center;
@@ -108,7 +102,7 @@ body {
     background-color: var(--verde);
 }
 
-.text-center::before {
+.inicio::before {
     content: '';
     position: absolute;
     top: 0;
@@ -119,7 +113,7 @@ body {
     z-index: 0;
 }
 
-.text-center img {
+.inicio img {
     display: none;
 }
 
@@ -130,9 +124,7 @@ body {
     color: #fff;
     z-index: 1;
     position: relative;
-    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.04);
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255,255,255,0.08);
@@ -158,7 +150,7 @@ body {
     .text-content {
         padding: 20px;
         margin: 0 16px;
-        margin-top: 0; /* evita sobreposição em telas pequenas */
+        margin-top: 0;
     }
     .text-content h1,
     .text-content h2 {
@@ -169,7 +161,6 @@ body {
     }
 }
 
-/* Responsividade da nav e layout geral */
 @media (max-width: 900px) {
     header nav {
         height: auto;
@@ -193,7 +184,7 @@ body {
         padding: 10px 12px;
         width: 100%;
     }
-    .text-center {
+    .inicio {
         min-height: 420px;
         padding-top: 24px;
     }

@@ -1,0 +1,90 @@
+.reciclagem {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.reciclagem h2 {
+    color: #0d936b;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.reciclagem h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #374151;
+}
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+
+.cards {
+    padding: 10px;
+}
+
+.icone {
+    width: 90px;
+    height: 90px;
+    background: #01a878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.icone i {
+    font-size: 38px;
+    color: white;
+}
+
+.cards-number {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0d936b;
+}
+
+.cards h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #1f2937;
+}
+
+.cards p {
+    padding: 0 10px;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+@media (max-width: 900px) {
+    .steps-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .reciclagem h1 {
+        font-size: 22px;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .icon-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-box i {
+        font-size: 32px;
+    }
+}
