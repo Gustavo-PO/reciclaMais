@@ -1,0 +1,16 @@
+.info-section {
+    background-color:var(--verde);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.info-section h3 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    color: #FFFFFF;
+    font-size: 15px;
+}
