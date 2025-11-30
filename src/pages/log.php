@@ -59,7 +59,7 @@ if (!empty($_POST)) {
 
                 if ($result->num_rows > 0) {
                     $userInfos = $result->fetch_object();
-
+    
                     $_SESSION['session_id'] = session_id();
                     $_SESSION['id_user'] = $userInfos->id_user;
                     $_SESSION['nome'] = $userInfos->nome;
@@ -87,6 +87,7 @@ if (!empty($_POST)) {
                 $result = $con->query($sql);
                 $_SESSION['session_id'] = session_id();
                 $userInfos = $result->fetch_object();
+                header("Location: home.php");
                 $_SESSION['id_user'] = $userInfos->id_user;
                 $_SESSION['email'] = $userInfos->email;
                 $_SESSION['senha'] = $userInfos->senha;

@@ -5,5 +5,4 @@ if (isUserLoggedIn() == true) {
     logoutUser();
 }
 
-
 ?>

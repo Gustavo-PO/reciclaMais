@@ -32,7 +32,7 @@ require_once 'log.php';
                 <?php
                 if (isUserLoggedIn() == true) {
                 ?>
-                <li><a href="recompensas.php">Recompensas</a></li>
+                <li><a href="recompensas.html">Recompensas</a></li>
                 <li><a href="logout.php"><i class="fa-solid fa-circle-user"></i>LogOut</a></li>
                 <?php
                 }else{

@@ -1,11 +1,62 @@
-tos p {
+.recompensas {
+    width: 100%;
+    max-width: 1fr;
+    margin: 0 auto;
+}
+
+.card-recompensas {
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.titulo-recompensas {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 630px;
+}
+
+.titulo-recompensas h1 {
+    font-size: 36px;
+    color: var(--verde-escuro);
+    margin-bottom: 20px;
+}
+
+.titulo-recompensas h3 {
+    font-size: 20px;
+    color: var(--verde);
+}
+
+.cartao-pontos {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    max-width: 450px;
+    width: 100%;
+    margin: 0;
+}
+
+.numero-pontos {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--verde);
+    margin-bottom: 10px;
+}
+
+p {
     margin-bottom: 15px;
     font-size: 16px;
 }
 
 .botao-pontos {
-    background: white;
-    color: #2ecc71;
+    background: var(--verde);
+    color: var(--texto-branco);
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -15,25 +66,27 @@ tos p {
 }
 
 .botao-pontos:hover {
-    background: #f0f0f0;
+    background: var(--verde-escuro);
 }
 
-/* Conquistas */
 .conquistas {
     margin: 30px 0;
+    background-color: var(--verde-claro);
 }
 
 .conquistas h2 {
-    color: #2ecc71;
+    color: var(--verde);
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 28px;
     text-align: center;
+    padding: 15px;
 }
 
 .lista-conquistas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    padding: 15px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -42,7 +95,8 @@ tos p {
     background: #f9f9f9;
     border-radius: 8px;
     padding: 15px;
-    border-left: 4px solid #2ecc71;
+    border-left: 4px solid var(--verde);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .cabecalho-conquista {
@@ -54,12 +108,12 @@ tos p {
 
 .nome-conquista {
     font-weight: bold;
-    color: #2ecc71;
+    color: var(--verde);
     font-size: 16px;
 }
 
 .pontos-conquista {
-    background: #2ecc71;
+    background: var(--verde);
     color: white;
     padding: 4px 8px;
     border-radius: 12px;
@@ -67,19 +121,19 @@ tos p {
 }
 
 .descricao-conquista {
-    color: #666;
+    color: var(--texto-preto);
     margin-bottom: 10px;
     font-size: 14px;
 }
 
 .status-conquista {
-    color: #2ecc71;
+    color: var(--verde);
     font-size: 14px;
 }
 
 .conquistado {
     font-weight: bold;
-    color: #27ae60;
+    color: var(--verde);
 }
 
 .barra-progresso {
@@ -90,20 +144,19 @@ tos p {
 }
 
 .progresso {
-    background: #2ecc71;
+    background: var(--verde);
     height: 100%;
     border-radius: 5px;
 }
 
-/* Liga de recompensas */
 .liga-recompensas {
     margin: 30px 0;
 }
 
 .liga-recompensas h2 {
-    color: #2ecc71;
+    color: var(--verde-escuro);
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -121,23 +174,24 @@ tos p {
     padding: 15px;
     text-align: center;
     border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nome-recompensa {
     font-weight: bold;
-    color: #2ecc71;
+    color: var(--verde);
     font-size: 16px;
     margin-bottom: 8px;
 }
 
 .local-recompensa {
-    color: #666;
+    color: var(--texto-preto);
     margin-bottom: 8px;
     font-size: 14px;
 }
 
 .pontos-recompensa {
-    background: #2ecc71;
+    background: var(--verde);
     color: white;
     padding: 6px 12px;
     border-radius: 15px;
@@ -147,7 +201,7 @@ tos p {
 }
 
 .botao-resgatar {
-    background: #2ecc71;
+    background: var(--verde);
     color: white;
     border: none;
     padding: 8px 16px;
@@ -159,28 +213,15 @@ tos p {
 }
 
 .botao-resgatar:hover {
-    background: #27ae60;
+    background: var(--verde-escuro);
 }
 
-/* Bônus mensal */
-.bonus-mensal {
-    background: #e8f5e9;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    margin-top: 20px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+@media(max-width: 1024px) {
+    .nav-links {
+        margin-right: 40px;
+    }
 }
 
-.bonus-mensal p {
-    margin-bottom: 8px;
-    color: #2e7d32;
-    font-weight: 500;
-}
-
-/* Celular */
 @media (max-width: 768px) {
     .lista-conquistas,
     .lista-recompensas {
