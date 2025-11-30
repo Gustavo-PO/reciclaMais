@@ -3,7 +3,7 @@
 # ♻️ Plataforma de Sustentabilidade  
 ## Sistema de Gamificação e Educação Ambiental
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/status-finalizado-green)
 ![PHP](https://img.shields.io/badge/PHP-✓-blue)
 ![MySQL](https://img.shields.io/badge/MySQL-✓-lightblue)
 ![HTML5](https://img.shields.io/badge/HTML5-✓-orange)
@@ -24,7 +24,6 @@ A plataforma funciona como um **hub de sustentabilidade**, permitindo que os usu
 - Registrem atividades de reciclagem, economia de água e energia  
 - Acompanhem seus pontos acumulados  
 - Troquem pontos por recompensas  
-- Leiam notícias atualizadas sobre meio ambiente  
 - Acessem dicas e conteúdos educativos  
 
 O objetivo é criar um ciclo duradouro de incentivo ecológico e conscientização ambiental.
@@ -108,12 +107,12 @@ cd Projetos
 ### 2️⃣ Clonar o Repositório do GitHub
 bash
 git clone 
-https://github.com/Gustavo-PO/reciclaMais
+https://github.com/Gustavo-PO/reciclaMais.git
 - Isso cria uma pasta chamada RECICLAMAIS com todos os arquivos do site.
 
 ### 3️⃣ Entrar na Pasta do Projeto
 bash
-cd RECICLAMAIS
+cd reciclaMais
 - Agora você está **dentro da pasta do RECICLAMAIS**, pronto para trabalhar.
 
 ### 4️⃣ Verificar Arquivos Modificados
