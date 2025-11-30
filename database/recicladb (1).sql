@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25/11/2025 às 01:25
+-- Tempo de geração: 30/11/2025 às 01:51
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -24,23 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `endereco`
---
-
-CREATE TABLE `endereco` (
-  `id` int(11) NOT NULL,
-  `usuario_id` int(11) NOT NULL,
-  `rua` varchar(150) NOT NULL,
-  `numero` varchar(10) NOT NULL,
-  `bairro` varchar(100) NOT NULL,
-  `cidade` varchar(100) NOT NULL,
-  `estado` char(2) NOT NULL,
-  `cep` char(8) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Estrutura para tabela `usuarios`
 --
 
@@ -48,21 +31,27 @@ CREATE TABLE `usuarios` (
   `id_user` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `email` varchar(150) NOT NULL,
-  `senha` varchar(255) NOT NULL,
-  `cpf` char(11) NOT NULL,
-  `fone` varchar(15) NOT NULL
+  `senha` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_user`, `nome`, `email`, `senha`) VALUES
+(1, 'Gustavo', 'gustavo@gmail.com', '123456'),
+(2, 'Gustavo', 'gustavo@gmail.com', '123456'),
+(3, 'Maria', 'maria@gmail.com', '1472587'),
+(4, 'Maria', 'maria@gmail.com', '1472587'),
+(5, 'Pedro', 'pedro@gmail.com', '159487'),
+(6, 'Matheus', 'matheus@gmail.com', '123789'),
+(7, 'Denis', 'denisdj@gmail.com', '159753'),
+(8, 'Denis', 'denisdj@gmail.com', '159753'),
+(9, 'Vinicius', 'vinicius@gmail.com', '123456');
 
 --
 -- Índices para tabelas despejadas
 --
-
---
--- Índices de tabela `endereco`
---
-ALTER TABLE `endereco`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_usuario` (`usuario_id`);
 
 --
 -- Índices de tabela `usuarios`
@@ -75,26 +64,10 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de tabela `endereco`
---
-ALTER TABLE `endereco`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Restrições para tabelas despejadas
---
-
---
--- Restrições para tabelas `endereco`
---
-ALTER TABLE `endereco`
-  ADD CONSTRAINT `fk_usuario` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
