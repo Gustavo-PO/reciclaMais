@@ -55,7 +55,6 @@ O objetivo é criar um ciclo duradouro de incentivo ecológico e conscientizaç�
 - Registro de atividades sustentáveis  
 - Sistema de pontos  
 - Recompensas  
-- Notícias  
 - Seção educativa  
 - Interface responsiva  
 
