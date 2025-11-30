@@ -28,7 +28,7 @@ require_once 'log.php';
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#comofunciona">Como funciona</a></li>
                 <li><a href="#aprenda">Aprenda</a></li>
-                <li><a href="home.html">Sobre Nós</a></li>
+                <li><a href="sobrenos.php">Sobre Nós</a></li>
                 <?php
                 if (isUserLoggedIn() == true) {
                 ?>
