@@ -48,6 +48,29 @@ O objetivo é criar um ciclo duradouro de incentivo ecológico e conscientizaç�
 
 ---
 
+### Estrutura do Projeto
+
+**📂 Estrutura de pastas:**
+
+``` bash 
+ reciclaMais/
+├── css/          
+  └──aprenda.css
+  └──comofunciona.css
+  └──home.css
+  └──login.css
+  └──recompensas.css
+├── js/
+  └──login.js
+├── database/
+  └──connect.php
+  └──reciclado.sql
+├── src\pages
+  └──home.php
+  └──login.php
+└── recompensas.html/        
+```
+
 ## 🚀 Funcionalidades
 
 - Cadastro e login  
